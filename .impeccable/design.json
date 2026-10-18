@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-18T14:30:00Z",
+  "title": "Design System: Brake It Easy",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Action teal" },
+      "sky": { "role": "secondary", "displayName": "Home sky" },
+      "peach": { "role": "tertiary", "displayName": "Practice peach" },
+      "mint": { "role": "secondary", "displayName": "Environmental mint" },
+      "blue": { "role": "secondary", "displayName": "Awareness blue" }
+    },
+    "typographyMeta": {
+      "title": { "displayName": "Title", "purpose": "Short screen headings." },
+      "body": { "displayName": "Body", "purpose": "Plain-language explanations." },
+      "label": { "displayName": "Label", "purpose": "Supporting details and controls." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action on a screen.",
+      "html": "<button class=\"ds-primary\">Finish drive</button>",
+      "css": ".ds-primary { height: 54px; padding: 0 28px; border: 0; border-radius: 999px; background: #007F94; color: #FFFFFF; font: 600 17px 'Avenir Next', sans-serif; cursor: pointer; } .ds-primary:hover, .ds-primary:active { background: #006D80; } .ds-primary:focus-visible { outline: 3px solid #E86662; outline-offset: 3px; }"
+    },
+    {
+      "name": "White Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "A compact content surface over a pastel screen.",
+      "html": "<div class=\"ds-card\">Drive history</div>",
+      "css": ".ds-card { padding: 20px; border-radius: 20px; background: #FFFFFF; color: #24333A; font: 600 17px 'Avenir Next', sans-serif; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "A quiet moment after the drive.",
+    "overview": "The interface borrows the supplied reference's soft color fields, approachable rounded type, simple centered composition, and clear turquoise action. The mood is reassuring and curious.",
+    "keyCharacteristics": ["Pastel screen backgrounds", "Dark, legible text", "One prominent action per state", "Compact cards and rounded sheets"],
+    "rules": [
+      { "name": "The Calm Surface Rule", "body": "Use sky for Home, sea glass for History and Recording, and a near-white canvas for the recap.", "section": "colors" },
+      { "name": "The One Voice Rule", "body": "Use Avenir Next throughout with sentence case.", "section": "typography" },
+      { "name": "The One Action Rule", "body": "The main action is teal with white text and at least a 44pt touch target. The graph supports dragging the marker to read time and speed.", "section": "components" }
+    ],
+    "dos": ["Do label fuel and CO₂ as estimates, and credit the recorded data in the Home info sheet.", "Do keep live recording free of scores and coaching prompts."],
+    "donts": ["Don't use uppercase display slogans, neon accents, dense nesting, or decorative speed lines.", "Don't imply that a motion spike establishes fault or that the app measures emissions directly."]
+  }
+}

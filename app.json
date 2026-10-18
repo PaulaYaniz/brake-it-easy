@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Brake It Easy",
+    "slug": "brake-it-easy",
+    "scheme": "brakeiteasy",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.brakeiteasy.prototype"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      ["expo-sensors", {"motionPermission": "Brake It Easy uses phone motion during a drive to show moments you can review after parking."}],
+      ["expo-location", {"locationWhenInUsePermission": "Brake It Easy uses speed and trip distance while you record a drive. Your coordinates are not saved."}]
+    ],
+    "experiments": {"typedRoutes": true}
+  }
+}
